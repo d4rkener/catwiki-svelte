@@ -23,6 +23,10 @@
 			align-items: center;
 		}
 
+		&__logo {
+			width: 7.9375rem;
+		}
+
 		&__paragraph {
 			font-size: 0.9375rem;
 
