@@ -15,7 +15,7 @@
   @use '../../scss/_breakpoints.scss' as md;
 
   .hero {
-    background-image: url('./hero-image-sm.png');
+    background-image: url('../../../static/hero-image-sm.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,12 +25,12 @@
     color: var.$white;
 
     @include md.breakpoint(medium) {
-      background-image: url('./hero-image-md.png');
+      background-image: url('../../../static/hero-image-md.png');
       padding: 3.125rem 3.75rem;
     }
 
     @include md.breakpoint(large) {
-      background-image: url('./hero-image-lg.png');
+      background-image: url('../../../static/hero-image-lg.png');
       padding: 4.6875rem 5.625rem;
     }
 
