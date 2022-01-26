@@ -7,76 +7,76 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	font-size: 100%;
-	line-height: 1.4;
-	font-family: var.$font;
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: var.$font;
 }
 
 img {
-	width: 100%;
+  width: 100%;
 }
 
 a {
-	display: inline-block;
-	text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 button {
-	outline: 0;
-	border: 0;
-	font-family: var.$font;
+  outline: 0;
+  border: 0;
+  font-family: var.$font;
 
-	&:active,
-	&:focus {
-		outline: 0;
-		border: 0;
-	}
+  &:active,
+  &:focus {
+    outline: 0;
+    border: 0;
+  }
 }
 
 input {
-	outline: 0;
-	font-family: var.$font;
-	border: 0;
-	background-color: var.$white;
-	color: var.$cannonBlack;
+  outline: 0;
+  font-family: var.$font;
+  border: 0;
+  background-color: var.$white;
+  color: var.$cannonBlack;
 }
 
 /* ---------- HELPERS ------------ */
 .container {
-	padding: 0 1.125rem;
+  padding: 0 1.125rem;
 
-	@include md.breakpoint(medium) {
-		padding: 0 3rem;
-	}
+  @include md.breakpoint(medium) {
+    padding: 0 3rem;
+  }
 
-	@include md.breakpoint(large) {
-		padding: 0 6rem;
-	}
+  @include md.breakpoint(large) {
+    padding: 0 6rem;
+  }
 }
 
 .hide {
-	display: none;
+  display: none;
 
-	&-mobile {
-		@include md.breakpointDown(medium) {
-			display: none;
-		}
-	}
+  &-mobile {
+    @include md.breakpointDown(medium) {
+      display: none;
+    }
+  }
 
-	&-desktop {
-		@include md.breakpoint(medium) {
-			display: none;
-		}
-	}
+  &-desktop {
+    @include md.breakpoint(medium) {
+      display: none;
+    }
+  }
 }

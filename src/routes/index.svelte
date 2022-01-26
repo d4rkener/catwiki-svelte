@@ -1,11 +1,13 @@
 <script>
-	import Hero from '../components/homepage/Hero.svelte';
+  import Hero from '../components/homepage/Hero.svelte';
+  import MostSearched from '../components/homepage/MostSearched.svelte';
 </script>
 
 <svelte:head>
-	<title>CatWiki | Homepage</title>
+  <title>CatWiki | Homepage</title>
 </svelte:head>
 
 <div class="index">
-	<Hero />
+  <Hero />
+  <MostSearched />
 </div>
