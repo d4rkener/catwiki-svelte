@@ -1,6 +1,20 @@
+<script context="module">
+  export const load = async () => {
+    const res = await fetch(
+      `https://api.thecatapi.com/v1/breeds?${import.meta.env.VITE_API_KEY}&limit=4`
+    );
+
+    const data = await res.json();
+
+    return { props: { results: data } };
+  };
+</script>
+
 <script>
   import Hero from '../components/homepage/Hero.svelte';
   import MostSearched from '../components/homepage/MostSearched.svelte';
+
+  export let results;
 </script>
 
 <svelte:head>
@@ -9,5 +23,5 @@
 
 <div class="index">
   <Hero />
-  <MostSearched />
+  <MostSearched {results} />
 </div>

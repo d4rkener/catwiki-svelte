@@ -1,8 +1,18 @@
+<script>
+  import Cat from './Cat.svelte';
+  export let results;
+</script>
+
 <div class="showcase">
   <p class="showcase__title">Most Searched Breeds</p>
   <div class="showcase__heading">
     <h1>66+ Breeds For you <br /> to discover</h1>
     <a href="/top-search">See More <img src="./arrow-forward-outline.svg" alt="arrow-logo" /></a>
+  </div>
+  <div class="showcase__cats">
+    {#each results as result (result.id)}
+      <Cat {result} />
+    {/each}
   </div>
 </div>
 
@@ -12,14 +22,16 @@
 
   .showcase {
     background-color: var.$westar;
-    padding: 1.125rem 1.875rem;
+    padding: 1.125rem 1.875rem 3rem 1.875rem;
+    border-bottom-left-radius: 2.625rem;
+    border-bottom-right-radius: 2.625rem;
 
     @include md.breakpoint(medium) {
-      padding: 1.75rem 3.75rem;
+      padding: 1.75rem 3.75rem 3.75rem 3.75rem;
     }
 
     @include md.breakpoint(large) {
-      padding: 2.125rem 5.625rem;
+      padding: 2.125rem 5.625rem 4.75rem 5.625rem;
     }
 
     &__title {
@@ -99,6 +111,20 @@
         img {
           width: 1.125rem;
         }
+      }
+    }
+
+    &__cats {
+      margin-top: 1.875rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      flex: 1;
+
+      @include md.breakpoint(medium) {
+        margin-top: 2.625rem;
       }
     }
   }
