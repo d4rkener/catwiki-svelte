@@ -15,18 +15,18 @@
 
   .cat {
     &__image {
-      width: 150px;
-      height: 150px;
-      border-radius: 12px;
+      width: 9.375rem;
+      height: 9.375rem;
+      border-radius: 0.75rem;
 
       @include md.breakpoint(medium) {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
       }
 
       @include md.breakpoint(large) {
-        width: 250px;
-        height: 250px;
+        width: 15.625rem;
+        height: 15.625rem;
       }
     }
 
@@ -34,7 +34,7 @@
       color: var.$cannonBlack;
       font-weight: 600;
       font-size: 0.875rem;
-      margin-top: 12px;
+      margin-top: 0.75rem;
 
       @include md.breakpoint(medium) {
         font-size: 1.125rem;

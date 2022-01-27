@@ -23,6 +23,10 @@
       align-items: center;
     }
 
+    @include md.breakpoint(large) {
+      margin-top: 6.25rem;
+    }
+
     &__logo {
       width: 7.9375rem;
     }

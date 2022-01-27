@@ -13,6 +13,7 @@
 <script>
   import Hero from '../components/homepage/Hero.svelte';
   import MostSearched from '../components/homepage/MostSearched.svelte';
+  import WhyCat from '../components/homepage/WhyCat.svelte';
 
   export let results;
 </script>
@@ -24,4 +25,5 @@
 <div class="index">
   <Hero />
   <MostSearched {results} />
+  <WhyCat />
 </div>
