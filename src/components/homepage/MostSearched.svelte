@@ -7,7 +7,9 @@
   <p class="showcase__title">Most Searched Breeds</p>
   <div class="showcase__heading">
     <h1>66+ Breeds For you <br /> to discover</h1>
-    <a href="/top-search">See More <img src="./arrow-forward-outline.svg" alt="arrow-logo" /></a>
+    <a sveltekit:prefetch href="/top-search"
+      >See More <img src="./arrow-forward-outline.svg" alt="arrow-logo" /></a
+    >
   </div>
   <div class="showcase__cats">
     {#each results as result (result.id)}
