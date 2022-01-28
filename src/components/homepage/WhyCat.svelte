@@ -5,7 +5,9 @@
       Having a cat around you can actually trigger the release of calming chemicals in your body
       which lower your stress and anxiety leves
     </p>
-    <a href="/why-cats">Read More <img src="./arrow-forward-outline.svg" alt="arrow-logo" /></a>
+    <a sveltekit:prefetch href="/why-cats"
+      >Read More <img src="./arrow-forward-outline.svg" alt="arrow-logo" /></a
+    >
   </div>
   <div class="information__images">
     <img src="./image-1.png" alt="cute-cat" />
